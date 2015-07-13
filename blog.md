@@ -1,0 +1,29 @@
+---
+layout: default
+theme: default
+---
+
+<div class="home">
+	<h1 class="page-heading">WEB DEVELOPMENT</h1>
+
+	<p>Most of them will probably be about front-end development work, or possibly broader coding things, tips, tricks and more. The odd one will be tagged #personal or #opinion, so if you have the <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS feed</a> you can filter those out if you don't want them!</p>
+
+	<ul class="posts">
+		{% for post in site.posts %}
+			<li class="posts__item">
+				<div class="posts__item__meta">
+					<span class="posts__item__day-month">{{ post.date | date: "%-d/%b" }}</span><br>
+					<span class="posts__item__year">{{ post.date | date: "%Y" }}</span>
+				</div>
+
+				<div class="posts__item__data">
+					<h2>
+						<a class="posts__item__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					</h2>
+
+					<span class="posts__item__categories">{% for category in post.categories %} #{{category}} {% endfor %}</span>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
