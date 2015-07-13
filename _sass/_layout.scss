@@ -250,6 +250,10 @@ a {
 	}
 }
 
+.page-content {
+	min-height: calc(100% - 475px);
+}
+
 @import "_header";
 @import "_posts/_posts";
 
