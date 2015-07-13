@@ -1,15 +1,50 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+    <div class="page-content">
+		<div class="post">
+			<header class="post__header">
+				<div class="wrapper">
+					<h1 class="post__title">{{ page.title }}</h1>
+					<h2 class="post__excerpt">{{page.excerpt}}</h2>
+					<div class="post__meta">
+						<ul>
+							<li class="last-update">
+								<span class="name">Last updated:</span>
+								<span class="value">{{ page.date | date: "%-d %B %Y" }}</span>
+							</li>
+							<li>
+								<span class="name">Est. read time:</span>
+								<span class="value">{{page.etr}} min</span>
+							</li>
+							<li class="share">
+								<span class="name">Share this:</span>
+								<a href="" class="value">Twitter</a>
+								<a href="" class="value">Google+</a>
+							</li>
+							<li>
+								<span class="name">Tagged:</span>
+								{% for category in page.categories %}
+									<span class="value">#{{category}}</span>
+								{% endfor %}
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+			<article class="post__content">
+				<div class="wrapper">
+					{{ content }}
+				</div>
+			</article>
+		</div>
+    </div>
 
-</div>
+    {% include footer.html %}
+  </body>
+</html>
+

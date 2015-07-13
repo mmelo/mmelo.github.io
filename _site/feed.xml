@@ -6,20 +6,37 @@
 </description>
     <link>http://mmelo.github.io/</link>
     <atom:link href="http://mmelo.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Jul 2015 02:05:21 +0100</pubDate>
-    <lastBuildDate>Mon, 13 Jul 2015 02:05:21 +0100</lastBuildDate>
+    <pubDate>Mon, 13 Jul 2015 04:09:55 +0100</pubDate>
+    <lastBuildDate>Mon, 13 Jul 2015 04:09:55 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Welcome!</title>
-        <description>&lt;p&gt;Hello world.&lt;/p&gt;
+        <description>&lt;p&gt;My name is Miguel and i work at &lt;a href=&quot;http://inm.pt&quot;&gt;INM&lt;/a&gt; on the Front-End WebDevelopment Team as a developer and a Team-Leader, and
+my work usualy consists in defining our website and webapps architectures as well as developing them.
+&lt;br /&gt;
+&lt;br /&gt;
+Most of the work I do nowadays revolves around making Backbone apps and recently I started playing with
+Jekyll and from there I thought it might be a good idea to start a blog where I could share a few of the challenges,
+tips, tricks and solutions I find along the way.
+&lt;br /&gt;
+&lt;br /&gt;
+I hope someone will find some of the content I’ll be posting here usefull. Please stay tunned as I promise I’ll try to keep
+things updated here.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+cheer’s,
+&lt;br /&gt;
+&lt;br /&gt;
+MMelo&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Jul 2015 10:00:00 +0100</pubDate>
-        <link>http://mmelo.github.io/inm/2015/07/09/welcome.html</link>
-        <guid isPermaLink="true">http://mmelo.github.io/inm/2015/07/09/welcome.html</guid>
+        <link>http://mmelo.github.io/blog/welcome</link>
+        <guid isPermaLink="true">http://mmelo.github.io/blog/welcome</guid>
         
         
-        <category>inm</category>
+        <category>update</category>
         
       </item>
     

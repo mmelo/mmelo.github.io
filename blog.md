@@ -1,13 +1,10 @@
 ---
 layout: default
-theme: default
+title: Blog
+permalink: /blog/
 ---
 
 <div class="home">
-	<h1 class="page-heading">WEB DEVELOPMENT</h1>
-
-	<p>Most of them will probably be about front-end development work, or possibly broader coding things, tips, tricks and more. The odd one will be tagged #personal or #opinion, so if you have the <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS feed</a> you can filter those out if you don't want them!</p>
-
 	<ul class="posts">
 		{% for post in site.posts %}
 			<li class="posts__item">

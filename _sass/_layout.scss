@@ -22,6 +22,7 @@ a {
 	height: 345px;
 	margin-bottom: 140px;
 	background-color: #282828;
+	z-index: 4;
 
 	line-height: 345px;
 	font-family: $secondary-font-family;
@@ -251,7 +252,7 @@ a {
 }
 
 .page-content {
-	min-height: calc(100% - 475px);
+	min-height: calc(100% - 615px);
 }
 
 @import "_header";
@@ -262,4 +263,11 @@ a {
 	height: 200px;
 	margin-top: 140px;
 	background-color: $footer-background-color;
+}
+
+.header {
+	z-index: 1;
+}
+.page-content {
+	z-index: 2;
 }

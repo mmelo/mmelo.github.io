@@ -2,6 +2,29 @@
 layout: post
 title:  "Welcome!"
 date:   2015-07-09 09:00:00
-categories: inm
+categories: update
+permalink: /blog/:title
+etr: 3
+excerpt: >
+  The past few months I've been quite a busy chap. Mostly, I was preparing a few webapps at work, but
+  now things are looking a bit more on the calm side so I thought I could use a simple blog just to start
+  sharing a few ideas and front-end related stuff I've been busy with.
 ---
-Hello world.
+My name is Miguel and i work at [INM](http://inm.pt) on the Front-End WebDevelopment Team as a developer and a Team-Leader, and
+my work usualy consists in defining our website and webapps architectures as well as developing them.
+\\
+\\
+Most of the work I do nowadays revolves around making Backbone apps and recently I started playing with
+Jekyll and from there I thought it might be a good idea to start a blog where I could share a few of the challenges,
+tips, tricks and solutions I find along the way.
+\\
+\\
+I hope someone will find some of the content I'll be posting here usefull. Please stay tunned as I promise I'll try to keep
+things updated here.
+\\
+\\
+\\
+cheer's,
+\\
+\\
+MMelo
