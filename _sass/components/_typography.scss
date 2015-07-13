@@ -1,0 +1,50 @@
+$default-font-family: #{Helvetica, Arial, sans-serif};
+$secondary-font-family: #{'Lato', Helvetica, Arial, sans-serif};
+
+$default-font-size: 20px;
+
+html,
+body {
+	font-family: $default-font-family;
+	font-size: $default-font-size;
+	color: $primary-text-color;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: $default-font-size;
+	font-weight: 300;
+}
+p {
+	font-size: $default-font-size;
+	line-height: 1.4em;
+}
+
+.page-heading {
+	font-family: $secondary-font-family;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 32px;
+}
+
+.subhead {
+}
+
+.site-logo,
+.page-link {
+	color: $primary-text-color;
+	font-family: $secondary-font-family;
+	text-decoration: none;
+}
+.site-logo {
+	text-align: center;
+}
+.page-link {
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}

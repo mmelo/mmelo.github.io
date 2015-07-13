@@ -1,0 +1,49 @@
+.home {
+	width: 50%;
+}
+.posts {
+	@extend %flexbox;
+	@extend %flexbox-wrap;
+	margin-top: 32px;
+	&__item {
+		@extend %flexbox;
+		@extend %flexbox-wrap;
+		@extend %flexbox-align-items-top;
+
+		width: 100%;
+
+		padding: 8px 0px;
+		margin: 8px 0px;
+
+		&__meta {
+			width: 100px;
+			padding: 0px 32px 0px 0px;
+			text-align: right;
+		}
+		&__day-month,
+		&__year {
+			position: relative;
+			font-family: $secondary-font-family;
+			font-weight: bold;
+		}
+		&__day-month {
+			font-size: 20px;
+			color: $primary-color;
+		}
+		&__year {
+			font-size: 14px;
+		}
+		&__link {
+			font-family: $secondary-font-family;
+			font-size: 24px;
+			font-weight: 400;
+			color: $secondary-text-color;
+			text-decoration: none;
+		}
+		&__categories {
+			font-size: 12px;
+			font-weight: 100;
+			color: $accent-color;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+<header class="header">
+	<div class="wrapper">
+		<div class="header__logo">
+		<?xml version="1.0"?>
+			<svg width="94" height="94" xmlns="http://www.w3.org/2000/svg">
+			 <g>
+			  <g stroke="null" id="svg_11">
+			   <path stroke="#000" id="right-triangle" d="m78.927422,63.114857l-63.114891,0l63.114891,-63.114814l0,63.114814z" stroke-width="0" fill="#777777"/>
+			   <path stroke="#000" id="left-triangle" d="m16.07262,63.114895l0,-63.114895l63.114811,63.114895l-63.114811,0z" stroke-width="0" fill="#444444"/>
+			  </g>
+			 </g>
+			</svg>
+		</div>
+		<nav class="header__nav">
+			<ul class="header__menu">
+				<li class="header__menu__item active">
+					<a href="/" class="page-link">Home</a>
+				</li>
+				{% for page in site.pages %}
+					{% if page.title %}
+					<li class="header__menu__item">
+						<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+					</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</nav>
+
+		<svg id="left-line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="380px" height="380px" viewBox="0 0 380 380">
+		<line x1="0" y1="380" x2="380" y2="0" stroke="#AAAAAA" stroke-width="1"></line>
+		</svg>
+
+		<svg id="right-line" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="380px" height="380px" viewBox="0 0 380 380">
+		<line x1="0" y1="380" x2="380" y2="0" stroke="#B1DCDC" stroke-opacity="0.3" stroke-width="1"></line>
+		</svg>
+	</div>
+</header>

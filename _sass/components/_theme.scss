@@ -1,0 +1,89 @@
+.theme1 {
+	.header{
+		&__menu__item.active {
+			&:after {
+				background-color: $orange;
+			}
+		}
+
+		&__logo {
+			#left-triangle {
+				fill: $blue;
+			}
+			#right-triangle {
+				fill: $orange;
+			}
+		}
+	}
+
+	.header,
+	.masthead {
+		&:after {
+			background: linear-gradient(to right,#fff 0,$orange 33%,$blue 66%,#000 100%);
+		}	
+	}
+
+	.posts__item__day-month {
+		color: $orange;
+	}
+}
+
+.theme2 {
+	.header{
+		&__menu__item.active {
+			&:after {
+				background-color: $pink;
+			}
+		}
+
+		&__logo {
+			#left-triangle {
+				fill: $blue;
+			}
+			#right-triangle {
+				fill: $pink;
+			}
+		}
+	}
+
+	.header,
+	.masthead {
+		&:after {
+			background: linear-gradient(to right,#fff 0,$pink 33%,$blue 66%,#000 100%);
+		}	
+	}
+
+	.posts__item__day-month {
+		color: $pink;
+	}
+}
+
+.theme3 {
+	.header {
+		&__menu__item.active {
+			&:after {
+				background-color: $green;
+			}
+		}
+
+		&__logo {
+			#left-triangle {
+				fill: $blue;
+			}
+			#right-triangle {
+				fill: $green;
+			}
+		}
+	}
+
+	.header,
+	.masthead {
+		&:after {
+			background: linear-gradient(to right,#fff 0,$green 33%,$blue 66%,#000 100%);
+		}	
+	}
+
+	.posts__item__day-month {
+		color: $green;
+	}
+}
